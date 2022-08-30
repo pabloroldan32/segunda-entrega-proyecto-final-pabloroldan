@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+	
+}
+
+
+
+/*GRID INDEX*/
+/*.grid-container{
+	display: grid;
+    grid-template-areas: "nav" 
+                         "carousel" 
+                         "section" 
+                         "maparuta" 
+                         "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,auto);
+    align-items: center;                     
+}*/
+
+/*GRID AREA INDEX*/
+/*.nav-grid{
+	grid-area: nav;
+	
+}*/
+
+/*.carousel-grid{
+	grid-area: carousel;
+}
+
+.section-grid{
+	grid-area: section;
+
+}
+
+.maparuta-grid{
+	grid-area: maparuta;
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-grid{
+	grid-area: footer;
+	
+}*/
+
+
+
+/*GRID INFO-HISTORI*/
+/*.grid-container{
+	display: grid;
+    grid-template-areas: "nav"  
+                         "section" 
+                         "maparuta" 
+                         "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+    align-items: center;                     
+}*/
+
+/*GRID AREA INFO-HISTORIA*/
+/*.sectioninfohi-grid{
+	grid-area: section;
+}*/
+
+
+
+/*GRID DESTINOS*/
+/*.grid-container{
+	display: grid;
+    grid-template-areas: "nav"  
+                         "section" 
+                         "maparuta" 
+                         "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+    align-items: center;                     
+}*/
+
+/*GRID AREA DESTINOS*/
+/*.sectiondestinos-grid{
+	grid-area: section;
+}
+*/
+
+
+/*GRID TRASLADOS-SERVICIOS*/
+/*.grid-container{
+	display: grid;
+    grid-template-areas: "nav"  
+                         "section" 
+                         "maparuta" 
+                         "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+    align-items: center;                     
+}*/
+
+/*GRID AREA TRASLADOS-SERVICIOS*/
+/*.sectiontraservi-grid{
+	grid-area: section;
+}*/
+
+
+
+/*GRID CONTACTO*/
+/*.grid-container{
+	display: grid;
+    grid-template-areas: "nav" 
+                         "section"  
+                         "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,auto);
+    align-items: center;                     
+}*/
+
+/*GRID AREA CONTACTO*/
+/*.maincontacto-grid{
+	grid-area: section;
+}*/
+
+
+
+
+
+
+ /*PAGINA INDEX HTML*/
+main{
+	background-color: rgba(221, 148, 58, 0.3);
+}
+
+/*zolapa telefono*/
+.telefono{
+	text-align: center;
+	background-color: rgba(28, 28, 28, .9);
+	/*font-weight: 100;*/
+
+}
+.telefono  span{
+	color: white;
+}
+
+
+/*Titulo SAN JOSE DE JACHAL index*/
+h2{
+	background-color: rgba(135, 135, 251, .2);
+	text-align: center;
+  	font-size: 3rem;
+  	font-weight: 600;
+  	border: 2px solid;
+
+}
+
+
+/*info JACHAL*/
+.info-jachal{
+	width: 100%;
+	border: 1px solid;	
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+   
+}
+
+
+p{
+	margin: 15px;
+}
+
+
+ /*seccion de fotos e info*/
+.flex-lugares{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+
+}
+
+
+
+
+.text-infolugares{
+	background-color: rgba(255, 259, 249, .5);
+	display: flex;
+	flex-direction: column;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    margin: 10px;
+    font-size: large;
+
+}    
+
+.text-infolugares img{
+	border-radius: 5%;
+}
+
+.text-infolugares img:hover {
+	transform: scale(1.03);
+    transition: transfor 3s;
+    cursor: pointer;
+}	
+
+
+
+.text-infolugares p{
+	font-size: 18px;
+	font-weight: 300;
+
+}
+
+
+
+.w-100{
+	width: 100%;
+}
+
+
+/*PROX whatsapp*/
+
+.container-what{
+	background-color:rgba(87, 166, 57, .7);
+	border: 1px solid #0a0a0a;
+	position: fixed;
+	z-index: 999;
+	border-radius: 50%;
+	bottom: 20px;
+	right: 35px;
+	padding: 10px;
+	transition: ease 0.3s;
+	animation: efecto 1.2s infinite;
+	
+}
+
+.container-what:hover{
+	transform: scale(1.1);
+    transition: 0.3s;
+
+}
+
+.btn-what{
+    width: 45px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+	0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .85);
+	}
+	100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+	}
+
+}
+
+ /*Section Mapa*/
+.mapa{
+    display: flex; 
+    border: 1px solid;
+    flex-direction: row;
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+
+    	
+}
+
+
+.mapa-ruta{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  
+    
+	
+
+}
+
+
+.info-ruta40{
+	display: flex; 
+	background-color: rgba(255, 259, 249, .5);
+    border: 1px solid;
+    flex-direction: row;
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+    
+
+}
+
+
+ /*FOTO FONDO DE NAV*/
+.bg-nav{
+    background-image: linear-gradient(rgba(5, 7, 12, 0.20),  rgba(5, 7, 12, 0.20)),
+    url(../img/img-10huaco.jpg);
+    width: 100%;
+    height: 90vh;
+    
+    
+
+} 
+
+
+/*logo central*/
+.logo-img{
+	margin-top: 2%;
+	margin-left: 35%;
+	text-align: center;
+    
+}
+
+
+/* posicion de nav flotante*/
+.botonera{
+   /* padding-top:3%;*/
+    /*position: sticky;
+    top: 0;*/
+
+    
+}
+
+
+/*trod world viajes */
+.botonera h1{
+    /*margin-top:10%;*/
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+/*texto barra de navegacion*/
+.barra-imput{
+	text-align: center;
+	margin: ;
+    /*position: sticky;
+    top: 0;*/
+}
+
+
+/*nav flotante*/
+.botonera ul{
+	background-color:rgba(150, 170, 1255, .2);
+    margin-top: 6vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border-radius: 20px;
+    border: .1px solid red;
+
+
+
+} 
+
+
+/*posicion de texto del navegador*/
+.botonera ul li{
+	display: inline-block;
+	padding: 10px;
+
+
+}	 
+
+
+/*subrayado de text navegador*/
+.botonera ul li a{
+	text-decoration: none;
+	text-align: center;
+    /*margin-left: 60px;*/
+    font-weight: 300;
+    font-family:'Montserrat Alternates', sans-serif;
+    color: purple;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;   
+
+}    
+
+
+.botonera a:hover{
+	color:rebeccapurple;
+	font-weight: bolder;
+}
+
+
+
+
+
+
+/* PAGINA INFO-HISTORIA HTML*/
+.flex-lugaresJachal{
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	
+}
+
+
+.text-infojachal{
+    background-color: rgba(255, 259, 249, .5);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: 3px solid;
+    margin: 10px;
+    font-size: large;
+
+} 
+/*IMG-infojachal*/
+.img-infojachal{
+	width: 70%;
+	border-radius: 5%;
+	
+}
+
+/*texto de jachal*/
+.texto{
+	width: 30%;
+	text-align: center;
+
+}
+
+.texto1{
+	width: 30%;
+	text-align: center;
+  
+}
+
+.text-infojachal1{
+	 background-color: rgba(255, 259, 249, .5);
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	border: 3px solid;
+    margin: 10px;
+    font-size: large;
+  
+
+}
+
+ /*DESTINOS HTML*/
+
+ /* BOTON*/
+.botono {
+ position: relative;
+ font-size: 17px;
+ text-transform: uppercase;
+ text-decoration: none;
+ padding: 1em 2.5em;
+ display: inline-block;
+ border-radius: 6em;
+ transition: all .2s;
+ border: none;
+ font-family: inherit;
+ font-weight: 500;
+ color: black;
+ background-color: rgba(240, 178, 122  , .5);
+}
+
+.botono:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.botono:active {
+ transform: translateY(-1px);
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botono::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ transition: all .4s;
+}
+
+.botono::after {
+ background-color: #fff;
+}
+
+.botono:hover::after {
+ transform: scaleX(1.4) scaleY(1.6);
+ opacity: 0;
+}
+
+
+
+
+
+/*PAGINA CONTACTO HTML*/
+/*titulos del formulario*/
+.titulosForm {
+	margin-left: ;
+} 
+
+.subtitulo3{
+	margin-left: 1%;
+	text-align: center;
+}
+
+/*caja del formulario*/   
+.formulario{
+	border: solid;
+	background-color:rgba(170, 150, 150, 0.50);
+	margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
+    background: rgba(5, 7, 12, 0.35);
+
+}
+
+/*Color boton FORMULARIO*/
+.boton-form{
+	background-color: tomato;
+}
+
+form{
+	margin-left: 15px;
+} 
+
+
+
+
+/*Color del Footer*/
+.redes {
+	border: 2px solid;
+    background-color: rgba(28, 28, 28, .9);
+    width: 100%;
+
+  
+
+  }
+
+
+.flex-footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+
+ /*items FOOTER*/
+.items-footer{
+   color: white;
+   font-size: .9rem;
+   margin: 30px 35px 30px 30px;
+}  
+   
+   
+
+.redSocial {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	display: inline-block;	
+
+}
+
+
+.redSocial {
+	margin-right: 15%;
+	margin-top: 20px;
+	
+
+}	
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIAQUERYS - MOBILE LAST - INDEX HTML*/
+/*@media(max-width: 1150px){
+    .botonera ul li a{
+    	display: flex;
+  }    	
+
+}*/
+
+/*TABLET*/
+/*@media(max-width: 768px){
+    .botonera ul {
+    	display: flex;
+    	flex-direction: column;
+        align-items: center;
+  }
+ 
+    .flex-lugares{
+		flex-direction: column;
+		justify-content: space-around;
+
+  } 	
+
+   .maparuta-grid{
+		grid-area: maparuta;
+		display: flex;
+		flex-direction: column;
+  }
+
+   .mapa-ruta{
+		display: flex;	
+		align-items: center
+
+  }
+
+}*/
+
+
+		
+
+/*MEDIAQUERYS - MOBILE LAST - INFO HISTORIA HTML*/
+/*@media(max-width: 768px){
+     .text-infojachal{ 	
+		flex-direction: column;	
+		text-align: center;	
+	    align-items: center;
+  }
+
+
+    .texto{
+	  	flex-direction: column;
+	  	align-items: center;
+	  	margin: 5%;
+	  	text-align: center;
+	  	width: 100%;
+  }
+
+
+    .text-infojachal1{
+		flex-direction: column;
+		text-align: center;
+	    align-items: center;
+  }
+
+
+    .texto1{
+	  	flex-direction: column;
+	  	align-items: center;
+	  	margin: 5px;
+	  	text-align: center;
+	  	width: 100%;
+  }
+
+}*/
+
+
+/*MEDIAQUERYS - MOBILE LAST - CONTACTO HTML*/
+/*@media(max-width: 768px){
+    .subtitulo3{
+	    text-align: center;
+  }
+
+}*/
+
+
+
+/*MEDIAQUERYS - MOBILE LAST - FOOTER HTML*/
+/*@media(max-width: 375px){
+    .redSocial {
+		margin-right: 10%;
+		margin-top: 10%;
+		width: 10%;
+  }
+
+}*/
+
+/*MEDIAQUERYS - MOBILE LAST - FOOTER HTML*/
+
+/*@media(max-width: 387px){
+    .items-footer{
+	  
+	   font-size: .9rem;
+	   margin: 2%;
+
+  }  
+   
+}*/
+
+
+
+
+
+
+
